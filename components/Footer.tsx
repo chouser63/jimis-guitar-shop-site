@@ -1,5 +1,3 @@
-import React from "react";
-
 export function Footer() {
   return (
     <footer className="bg-indigo-900 text-white flex flex-col md:flex-row justify-between items-start md:items-center px-8 py-8 mt-10">
@@ -18,7 +16,6 @@ export function Footer() {
       </div>
 
       <div className="flex space-x-4 text-2xl mt-4 md:mt-0">
-        
       </div>
     </footer>
   );
