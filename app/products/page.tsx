@@ -251,8 +251,8 @@ export default function Products() {
                     PRODUCTS
                 </h1>
 
-                <div className="flex relative">
-                    <div className="w-[55%] pr-4">
+                <div className="flex flex-col md:relative">
+                    <div className="md:w-[55%] pr-4">
                         <div className="p-4 rounded-2xl shadow-md bg-indigo-50">
                             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                                 {guitars.map((guitar, index) => (
@@ -270,8 +270,8 @@ export default function Products() {
                         </div>
                     </div>
 
-                    <div className="fixed top-36 right-8 w-[40%] h-screen pt-12">
-                        <div className="bg-indigo-100 text-white rounded-2xl shadow-md p-8 h-[calc(100vh-30rem)]">
+                    <div className="hidden md:block md:fixed md:top-36 md:right-8 md:w-[40%] h-screen pt-12">
+                        <div className="bg-indigo-100 text-white rounded-2xl shadow-md p-8 h-[calc(100vh-20rem)] md:h-[calc(100vh-30rem)]">
                             <GuitarView guitar={selectedGuitar} />
                         </div>
                     </div>
