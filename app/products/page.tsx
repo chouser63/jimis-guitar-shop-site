@@ -12,9 +12,7 @@ export type Guitar = {
     description: string;
 };
 
-export default function Products() {
-
-    const guitars: Guitar[] = [
+const guitars: Guitar[] = [
         {
             make: "Alvarez",
             model: "DC-1 (12/String)",
@@ -240,6 +238,9 @@ export default function Products() {
             description: "A tobacco sunburst James Tyler JTV-59 guitar known for its excellent tone and build quality."
         }
     ];
+
+export default function Products() {
+
 
     const [selectedGuitar, setSelectedGuitar] = useState<Guitar>(guitars[0]);
 
