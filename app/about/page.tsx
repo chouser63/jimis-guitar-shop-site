@@ -8,7 +8,6 @@ export default function AboutPage() {
             </h1>
 
             <div className="flex flex-col lg:flex-row gap-10 items-start">
-                {/* Left Avatar + Quote */}
                 <div className="text-gray-800 bg-indigo-100 rounded-lg p-6 flex flex-col items-center lg:w-1/4">
                     <Image
                         src="/jimi.jpg"
@@ -21,9 +20,16 @@ export default function AboutPage() {
                     <p className="italic text-indigo-700 mt-2">
                         “Watch out for the drummer.”
                     </p>
+
+                    <Image
+                        src="/guitars1.jpg"
+                        alt="Guitars in the shop"
+                        width={200}
+                        height={200}
+                        className="my-4"
+                    />
                 </div>
 
-                {/* Main Biography */}
                 <div className="text-gray-800 lg:w-1/3 text-lg">
                     <p className="leading-relaxed mb-4">
                         Jimi Swank was born James Swarovski in Albania in 1972. He started
@@ -58,5 +64,5 @@ export default function AboutPage() {
                 />
             </div>
         </div>
-  );
+    );
 }

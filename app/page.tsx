@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="px-24 py-12">
+    <div className="px-8 lg:px-24 py-12">
       <div className="flex lg:flex-row flex-col justify-between">
         <div className="w-1/2 h-full flex flex-col">
           <h1 className="text-6xl font-extrabold text-indigo-600 mb-2">JIMI’S</h1>
@@ -21,10 +21,10 @@ export default function Home() {
 
 
         {/* Right Guitar + Announcements */}
-        <div className="flex flex-col gap-8 w-1/2 h-screen justify-center items-center">
+        <div className="flex flex-col gap-8 lg:w-1/2 h-screen justify-center items-center">
           <div className="bg-white/80 backdrop-blur-sm border border-indigo-200 rounded-lg shadow-lg p-6">
             <h3 className="text-xl font-bold text-indigo-600 mb-4">Latest Announcements</h3>
-            
+
             <div className="space-y-4">
               <div className="bg-indigo-50 p-4 border-l-4 border-indigo-600 hover:bg-indigo-100 transition-colors">
                 <p className="text-slate-900 font-medium">
@@ -47,6 +47,17 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <div className="w-full flex lg:justify-center">
+        <Image
+          src="/cdShopping.jpg"
+          alt="CDs in the shop"
+          width={400}
+          height={400}
+          className="mb-4"
+        />
+      </div>
+
 
     </div>
   );
